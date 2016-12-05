@@ -46,7 +46,7 @@
 										<use xlink:href="images/sprites/svg-symbols.svg#paperplane"></use>
 									</svg>
 									<span>Destinations</span></a>
-								<ul class="submenu">
+								<ul class="submenu visible">
 									<li><a href="">
 										<svg class="icon-arrow-small" aria-hidden="true">
 											<use xlink:href="images/sprites/svg-symbols.svg#arrow-small"></use>
@@ -123,11 +123,11 @@
 									<span>Partners</span></a></li>
 							<li>
 
-								<a href="">
+								<span>
 									<svg class="icon-house" aria-hidden="true">
 										<use xlink:href="images/sprites/svg-symbols.svg#house"></use>
 									</svg>
-									<span>Company details</span></a></li>
+									<span>Company details</span></span></li>
 						</ul>
 					</nav>
 
@@ -145,12 +145,42 @@
 
 		<!-- start layout-center -->
 		<div class="layout-center">
-			<section class="promo">
+			<section class="inner-content company-details-content">
 				<div class="cloud cloud1 animated fadeInLeft"></div>
 				<div class="cloud cloud2 animated fadeInRight"></div>
-				<img src="images/logo-white.png" alt="Monte Group Ltd" class="logo fadeInUpBig animated">
-				<div class="foreground"></div>
+
+				<div class="container">
+					<h1 class="main-heading"><span class="animated fadeIn">Company details</span></h1>
+
+					<div class="company-details animated fadeInUpBig">
+						<form class="feedback-form">
+							<input type="text" class="field" name="name" placeholder="Name">
+							<input type="text" class="field" name="contacts" placeholder="Contacts">
+							<textarea name="message" class="field field-text" placeholder="Message"></textarea>
+							<button class="btn">Send Message</button>
+						</form>
+
+						<div class="company-details-info">
+							<p>
+								MONTE GROUP LTD.
+							</p>
+							<p>
+								1 Mapp Street, Belize City, Belize<br>
+								Phone: +11111111111<br>
+								Fax: +11111111111<br>
+								E-mail: mail@mail.com
+							</p>
+
+						</div>
+					</div>
+				</div>
 			</section>
+			<div class="destination-map">
+				<div class="inner">
+					<!-- INSERT MAP HERE -->
+					<div id="map"></div>
+				</div>
+			</div>
 		</div>
 		<!-- end layout-center -->
 	</div>

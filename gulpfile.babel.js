@@ -35,9 +35,9 @@ gulp.task('styles', function() {
         .pipe($.stylus({
             use: [rupture(), bootstrap(), jeet()]
         }))
-        .pipe(combineMq({
-            beautify: true
-        }))
+        // .pipe(combineMq({
+        //     beautify: true
+        // }))
         //.pipe(uncss({
         //     html: ['app/index.html'],
         //     ignore: [/slick/]
@@ -221,12 +221,12 @@ gulp.task('sprites', () => {
 });
 
 gulp.task('icons', function() {
-    return gulp.src('app/images/*.svg')
+    return gulp.src('app/images/svg/*.svg')
         .pipe(svgSymbols({
             svgId: 'icon-%f',
             className: '.icon-%f',
             title: false,
-            fontSize: 16,
+            fontSize: 30,
             svgoConfig: {
 
             }
